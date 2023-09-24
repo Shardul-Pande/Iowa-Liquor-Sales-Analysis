@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="28" y="4" width="1222" height="387" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 19</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="53" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:IOWA_LOAD|||select Dim_Iowa_Liquor_Stores.* 
+from Dim_Iowa_Liquor_Stores</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IOWA_LOAD
+Query=select Dim_Iowa_Liquor_Store...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+                <Field name="Store_ID" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+                <Field name="Store_Name" size="80" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="V_String" />
+                <Field name="Store_Status" size="1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="String" />
+                <Field name="Address" size="80" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="V_String" />
+                <Field name="Zip_Code" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+                <Field name="Geo_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+                <Field name="Store_Address" size="80" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="V_String" />
+                <Field name="Report_Date" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="DateTime" />
+                <Field name="DI_JobID" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="V_String" />
+                <Field name="DI_CreateDate" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_LOAD;SERVER=LOCALHOST;Trusted_Connection=yes|||select Dim_Iowa_Liquor_Stores.* &#xA;from Dim_Iowa_Liquor_Stores" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* 
+from IOWA_LIQUOR_SALES_STG_ALTERYX</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IOWA
+Query=select IOWA_LIQUOR_SALES_STG...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="16" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="Store Number" size="6" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="Store Name" size="58" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="Address" size="55" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="City" size="17" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="Zip Code" size="5" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="Store Location" size="45" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="County Number" size="2" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="County" size="13" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="Category" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int32" />
+                <Field name="Category Name" size="36" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+                <Field name="Vendor Number" size="3" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="Vendor Name" size="67" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+                <Field name="Item Number" size="7" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+                <Field name="Item Description" size="63" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+                <Field name="Pack" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int32" />
+                <Field name="State Bottle Cost" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+                <Field name="Bottles Sold" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+                <Field name="Sale (Dollars)" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+                <Field name="Invoice_Line" size="16777216" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+                <Field name="Invoice_No" size="16777216" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+                <Field name="Line_No" size="16777216" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+                <Field name="Date_Converted" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};DATABASE=IOWA_Stage;SERVER=localhost;Trusted_Connection=yes|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="197" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store Number" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="209" y="245" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="Store_ID" selected="True" />
+                <SelectField field="Store_Name" selected="True" />
+                <SelectField field="Store_Status" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="Zip_Code" selected="True" />
+                <SelectField field="Geo_SK" selected="True" />
+                <SelectField field="Store_Address" selected="True" />
+                <SelectField field="Report_Date" selected="True" />
+                <SelectField field="DI_JobID" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="354" y="173" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Store Number" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Store_ID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Address" selected="True" rename="Right_Address" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="450" y="173" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store Number" selected="True" rename="Store_Number" />
+                <SelectField field="Bottles Sold" selected="True" />
+                <SelectField field="Sale (Dollars)" selected="True" type="FixedDecimal" size="19.4" />
+                <SelectField field="Volume Sold (Liters)" selected="True" type="FixedDecimal" size="19.4" />
+                <SelectField field="Volume Sold (Gallons)" selected="True" type="FixedDecimal" size="19.4" />
+                <SelectField field="Invoice_No" selected="True" />
+                <SelectField field="Date_Converted" selected="True" rename="Invoice_Date" />
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="642" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Invoice_No" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="846" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobID" size="256" type="V_WString" />
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="ToNumber([InvoiceDate_SK])" field="InvoiceDate_SK" size="20" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = [Engine.WorkflowFileName]
+DI_CreateDate = DateTimeNow()
+InvoiceDate_S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="954" y="53" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rajvi\AppData\Local\Temp\Engine_25428_c690e35101d5af46bf4eb41429919faa_\Engine_25428_27917c5eab345a47b57df2131e51aa67~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="738" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>Invoice_Date</InputFieldName>
+              <Language>English</Language>
+              <Format>mmddyyyy</Format>
+              <OutputFieldName>InvoiceDate_SK</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Invoice_Date To:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1122" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IOWA_LOAD|||dbo.fct_iowa_liquor_sales_invoice_header</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Upsert</OutputOption>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Invoice_No" Dest="Invoice_Number" />
+                    <Field Source="Store_Number" Dest="Store_Number" />
+                    <Field Source="Invoice_Date" Dest="Invoice_Date" />
+                    <Field Source="Store_SK" Dest="Store_SK" />
+                    <Field Source="Invoice_Bottles Sold" Dest="Invoice_Bottles_Sold" />
+                    <Field Source="Invoice_Sale (Dollars)" Dest="Invoice_Sale_Dollars" />
+                    <Field Source="Invoice_Volume Sold (Liters)" Dest="Invoice_Volume_Sold_Liters" />
+                    <Field Source="Invoice_Volume Sold (Gallons)" Dest="Invoice_Volume_Sold_Gallons" />
+                    <Field Source="InvoiceDate_SK" Dest="InvoiceDate_SK" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                  </AppendMapping>
+                </AppendMap>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IOWA_LOAD
+Query=dbo.fct_iowa_liquor_sales_in...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="546" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Invoice_No" action="GroupBy" rename="Invoice_No" />
+                <SummarizeField field="Store_Number" action="GroupBy" rename="Store_Number" />
+                <SummarizeField field="Invoice_Date" action="GroupBy" rename="Invoice_Date" />
+                <SummarizeField field="Store_SK" action="GroupBy" rename="Store_SK" />
+                <SummarizeField field="Bottles Sold" action="Sum" rename="Invoice_Bottles Sold" />
+                <SummarizeField field="Sale (Dollars)" action="Sum" rename="Invoice_Sale (Dollars)" />
+                <SummarizeField field="Volume Sold (Liters)" action="Sum" rename="Invoice_Volume Sold (Liters)" />
+                <SummarizeField field="Volume Sold (Gallons)" action="Sum" rename="Invoice_Volume Sold (Gallons)" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="930" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Invoice_No" selected="True" />
+                <Field field="InvoiceDate_SK" selected="True" />
+                <Field field="DI_JobID" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice_No" size="6" source="Summarize: GroupBy - Invoice_No" type="String" />
+                <Field name="Store_Number" source="Summarize: GroupBy - Store_Number" type="Int32" />
+                <Field name="Invoice_Date" source="Summarize: GroupBy - Invoice_Date" type="Date" />
+                <Field name="Store_SK" source="Summarize: GroupBy - Store_SK" type="Int32" />
+                <Field name="Invoice_Bottles Sold" source="Summarize: Sum - Bottles Sold" type="Int64" />
+                <Field name="Invoice_Sale (Dollars)" scale="4" size="19" source="Summarize: Sum - Sale (Dollars)" type="FixedDecimal" />
+                <Field name="Invoice_Volume Sold (Liters)" scale="4" size="19" source="Summarize: Sum - Volume Sold (Liters)" type="FixedDecimal" />
+                <Field name="Invoice_Volume Sold (Gallons)" scale="4" size="19" source="Summarize: Sum - Volume Sold (Gallons)" type="FixedDecimal" />
+                <Field name="InvoiceDate_SK" source="Formula: ToNumber([InvoiceDate_SK])" type="Int32" />
+                <Field name="DI_JobID" size="22" source="Formula: [Engine.WorkflowFileName]" type="String" />
+                <Field name="DI_CreateDate" source="Formula: DateTimeNow()" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1038" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice_No" selected="True" size="12" />
+                <SelectField field="Store_Number" selected="True" type="Int64" size="8" />
+                <SelectField field="Invoice_Date" selected="True" type="DateTime" size="19" />
+                <SelectField field="DI_JobID" selected="True" size="19" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File FileFormat="23" RecordLimit="">aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* 
+from Dim_iowa_liquor_Products</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:IOWA_LOAD
+Query=select Dim_iowa_liquor_Produ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item_SK" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Item_Number" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Item_Number_C" size="20" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="V_String" />
+            <Field name="Item_Description" size="80" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="V_String" />
+            <Field name="Category_SK" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Vendor_SK" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Bottle_Volume_ml" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Pack" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Inner_Pack" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Age" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Proof" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="List_Date" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Date" />
+            <Field name="UPC" size="20" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="V_String" />
+            <Field name="SCC" size="20" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="V_String" />
+            <Field name="State_Bottle_Cost" scale="4" size="21" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="FixedDecimal" />
+            <Field name="State_Case_Cost" scale="4" size="21" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="FixedDecimal" />
+            <Field name="State_Bottle_Retail" scale="4" size="21" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="FixedDecimal" />
+            <Field name="Report_Date" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Date" />
+            <Field name="DI_JobID" size="20" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="V_String" />
+            <Field name="DI_CreateDate" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File FileFormat="23" RecordLimit="">aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* 
+from IOWA_LIQUOR_SALES_STG_ALTERYX</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:IOWA
+Query=select IOWA_LIQUOR_SALES_STG...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Invoice/Item Number" size="16" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Store Number" size="6" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Store Name" size="58" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="Address" size="55" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="City" size="17" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="Zip Code" size="5" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Store Location" size="45" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="County Number" size="2" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="County" size="13" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="Category" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int32" />
+            <Field name="Category Name" size="36" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_String" />
+            <Field name="Vendor Number" size="3" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Vendor Name" size="67" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+            <Field name="Item Number" size="7" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Item Description" size="63" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+            <Field name="Pack" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+            <Field name="Bottle Volume (ml)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int32" />
+            <Field name="State Bottle Cost" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="State Bottle Retail" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Bottles Sold" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+            <Field name="Sale (Dollars)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Volume Sold (Liters)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Volume Sold (Gallons)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Invoice_Line" size="16777216" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+            <Field name="Invoice_No" size="16777216" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+            <Field name="Line_No" size="16777216" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="V_WString" />
+            <Field name="Date_Converted" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="198" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Item_Number_C" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Item Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Pack" selected="True" rename="Right_Pack" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="318" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Item_SK" selected="True" />
+            <SelectField field="Item_Number_C" selected="True" />
+            <SelectField field="Invoice/Item Number" selected="True" />
+            <SelectField field="Right_Pack" selected="True" />
+            <SelectField field="Bottle Volume (ml)" selected="True" />
+            <SelectField field="State Bottle Cost" selected="True" />
+            <SelectField field="State Bottle Retail" selected="True" />
+            <SelectField field="Bottles Sold" selected="True" />
+            <SelectField field="Sale (Dollars)" selected="True" />
+            <SelectField field="Volume Sold (Liters)" selected="True" />
+            <SelectField field="Volume Sold (Gallons)" selected="True" />
+            <SelectField field="Invoice_No" selected="True" />
+            <SelectField field="Line_No" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobID" size="20" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_JobID = [Engine.WorkflowFileName]
+DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="534" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Item_Number_C" selected="True" />
+            <Field field="Invoice_No" selected="True" />
+            <Field field="Line_No" selected="True" />
+            <Field field="DI_JobID" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item_SK" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Item_Number_C" source="File: aka:IOWA_LOAD|||select Dim_iowa_liquor_Products.* &#xA;from Dim_iowa_liquor_Products" type="Int32" />
+            <Field name="Invoice/Item Number" size="16" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Right_Pack" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+            <Field name="Bottle Volume (ml)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int32" />
+            <Field name="State Bottle Cost" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="State Bottle Retail" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Bottles Sold" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Int16" />
+            <Field name="Sale (Dollars)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Volume Sold (Liters)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Volume Sold (Gallons)" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="Double" />
+            <Field name="Invoice_No" size="6" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="Line_No" size="5" source="File: aka:IOWA|||select IOWA_LIQUOR_SALES_STG_ALTERYX.* &#xA;from IOWA_LIQUOR_SALES_STG_ALTERYX" type="String" />
+            <Field name="DI_JobID" size="20" source="Formula: [Engine.WorkflowFileName]" type="String" />
+            <Field name="DI_CreateDate" source="Formula: DateTimeNow()" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Item_SK" selected="True" />
+            <SelectField field="Item_Number_C" selected="True" />
+            <SelectField field="Invoice/Item Number" selected="True" />
+            <SelectField field="Right_Pack" selected="True" />
+            <SelectField field="Bottle Volume (ml)" selected="True" />
+            <SelectField field="State Bottle Cost" selected="True" />
+            <SelectField field="State Bottle Retail" selected="True" />
+            <SelectField field="Bottles Sold" selected="True" />
+            <SelectField field="Sale (Dollars)" selected="True" />
+            <SelectField field="Volume Sold (Liters)" selected="True" />
+            <SelectField field="Volume Sold (Gallons)" selected="True" />
+            <SelectField field="Invoice_No" selected="True" />
+            <SelectField field="Line_No" selected="True" />
+            <SelectField field="DI_JobID" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="738" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:IOWA_LOAD|||dbo.fct_iowa_liquor_sales_invoice_lineitem</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Item_SK" Dest="Item_SK" />
+                <Field Source="Item_Number_C" Dest="Item_Number" />
+                <Field Source="Invoice/Item Number" Dest="Invoice_Item_Number" />
+                <Field Source="Right_Pack" Dest="Pack" />
+                <Field Source="Bottle Volume (ml)" Dest="Bottle_Volume_ml" />
+                <Field Source="State Bottle Cost" Dest="State_Bottle_Cost" />
+                <Field Source="State Bottle Retail" Dest="State_Bottle_Retail" />
+                <Field Source="Bottles Sold" Dest="Bottles_Sold" />
+                <Field Source="Sale (Dollars)" Dest="Sale_Dollars" />
+                <Field Source="Volume Sold (Liters)" Dest="Volume_Sold_Liters" />
+                <Field Source="Volume Sold (Gallons)" Dest="Volume_Sold_Gallons" />
+                <Field Source="Invoice_No" Dest="Invoice_Number" />
+                <Field Source="Line_No" Dest="Invoice_Number_LineNo" />
+                <Field Source="DI_JobID" Dest="DI_JobID" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:IOWA_LOAD
+Query=dbo.fct_iowa_liquor_sales_in...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FACT_LOAD</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e8b0c619-8640-4ad2-9882-69c27777cc40" />
+      <Telemetry>
+        <PreviousWorkflowId value="932f35f4-7bfc-495b-b01b-eae268aaf30a" />
+        <OriginWorkflowId value="932f35f4-7bfc-495b-b01b-eae268aaf30a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
